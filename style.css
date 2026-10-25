@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+html {
+  font-family: 'Roboto';
+  font-weight: 100;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #f0f0f5;
+
+}
+
+footer {
+  background-color: #e5e9ec;
+  color: #000;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calculator-outer {
+  margin: 1rem;
+  aspect-ratio: 19.5/9;
+  border: #FFFFFF;
+  border-style: solid;
+  border-radius: 50px;
+  background-color: #000000;
+  padding: 1rem;
+  box-shadow: 5px 5px 15px rgba(32, 32, 32, 1);
+}
+
+#buttons {
+  aspect-ratio: inherit;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.calc-button {
+  border: none;
+  border-radius: 50%;
+  color: white;
+  padding: 15px 15px;
+  margin: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.light-grey {
+  background-color: #a5a7a9;
+  color: #000000;
+
+}
+
+.yellow {
+  background-color: #F29E08;
+  color: #FFFFFF;
+}
+
+.grey {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+.plus-minus {
+  font-size: 15px !important;
+}
+
+.calc-button:hover {
+  background-color: #aeaeae;
+}
+
+.calc-button:active {
+  background-color: rgb(155, 140, 140);
+}
+
+.zero-hai-ye-button {
+  grid-column: span 2;
+  border-radius: 50px !important;
+}
+
+.calc-button:disabled {
+  background-color: #A9A9A9;
+  /* Gray background for disabled button */
+  color: #D3D3D3;
+  /* Lighter gray text color */
+  cursor: not-allowed;
+  /* Show a 'not-allowed' cursor */
+  opacity: 0.6;
+  /* Make the button slightly transparent */
+}
+
+#input {
+  height: 12vh;
+  background-color: #000000;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 220px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  pointer-events: none;
+}
+
+#previous-numbers {
+  border-radius: 5px;
+  color: white;
+  width: 220px;
+  padding: 15px 20px;
+  height: 5vh;
+  pointer-events: none;
+  background-color: #000000;
+  border: none;
+  border-radius: 5px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}

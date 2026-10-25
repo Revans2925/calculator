@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=New+Amsterdam&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <main> <!-- 19.5:9 -->
+    <div id="calculator-outer">
+      <div id="display">
+        <div>
+          <input type="text" id="previous-numbers">
+        </div>
+        <div>
+          <input id="input" type="text">
+        </div>
+      </div>
+      <div id="buttons">
+        
+        <button onclick="clearCalculator()" class="calc-button light-grey">C</button>
+        <button onclick="changeSign()" class="calc-button plus-minus light-grey">+/-</button>
+        <button onclick="pressOperator('%')" class="calc-button op-btn light-grey">%</button>
+        <button onclick="pressOperator('/')"  class="calc-button op-btn yellow">/</button>
+        <button onclick="pressNumber(7)"  class="calc-button grey">7</button>
+        <button onclick="pressNumber(8)" class="calc-button grey">8</button>
+        <button onclick="pressNumber(9)" class="calc-button grey">9</button>
+        <button onclick="pressOperator('*')"  class="calc-button op-btn yellow">x</button>
+
+        <button  onclick="pressNumber(4)"class="calc-button grey">4</button>
+        <button  onclick="pressNumber(5)"class="calc-button grey">5</button>
+        <button  onclick="pressNumber(6)"class="calc-button grey">6</button>
+        <button  onclick="pressOperator('-')" class="calc-button op-btn yellow">-</button>
+        <button  onclick="pressNumber(1)"class="calc-button grey">1</button>
+        <button  onclick="pressNumber(2)"class="calc-button grey">2</button>
+        <button  onclick="pressNumber(3)"class="calc-button grey">3</button>
+        <button  onclick="pressOperator('+')" class="calc-button op-btn yellow">+</button>
+        <button  onclick="pressNumber(0)" class="zero-hai-ye-button calc-button grey">0</button>
+        <button  onclick="pressOperator('.')" class="calc-button grey">.</button>
+
+        <button  onclick="document.getElementById('input').value =calculate()" class="calc-button yellow" id="equalto">=</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- <footer>
+    <hr />
+    <p style="margin: 0;">Connect with me:</p>
+    <p style="margin: 5px 0;">
+      <a href="#" style="color: #7289da; text-decoration: none;">
+        Discord: jayraje
+      </a>
+      &nbsp;|&nbsp;
+      <a href="https://www.instagram.com/jayraje_shinde/" target="_blank"
+        style="color: #E1306C; text-decoration: none;">
+        Instagram: @jayraje_shinde
+      </a>
+      &nbsp;|&nbsp;
+      <a href="https://x.com/zeyraje" target="_blank" style="color: #000000; text-decoration: none;">
+        X: @zeyraje
+      </a>
+    </p>
+    <p style="margin: 0;">&copy; 2024 Jayraje Shinde</p>
+  </footer> -->
+  <script src="cal.js"></script>
+</body>
+
+</html>
